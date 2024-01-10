@@ -60,14 +60,6 @@ export class ParamEditor extends React.Component<Props, State> {
     return this.state.model;
   }
 
-  // Обнуляет значения после их сохранения
-  reset = () => {
-    this.setState({
-      model: {
-        paramValues: []
-      }
-    });
-  }
 
   render() {
     const { params } = this.props;
